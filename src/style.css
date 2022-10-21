@@ -29,6 +29,10 @@ h2 {
   text-align: center;
 }
 
+.hero-surname {
+  color: #28e2ff;
+}
+
 .hero-title {
   color: white;
   display: block;
