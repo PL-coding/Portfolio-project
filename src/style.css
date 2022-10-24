@@ -167,6 +167,7 @@ p {
 
 .skills h5 {
   color: white;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -174,6 +175,10 @@ p {
   display: block;
   height: 35px;
   margin: 0 auto;
+}
+
+.skills-list {
+  margin-bottom: 10px;
 }
 
 .skills-title {
