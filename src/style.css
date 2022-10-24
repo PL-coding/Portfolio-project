@@ -30,6 +30,10 @@ p {
   width: 85%;
 }
 
+.branding-word {
+  color: var(--brand-color);
+}
+
 .btn-card {
   border-color: var(--brand-color);
   border-radius: 20px;
@@ -45,8 +49,9 @@ p {
 .btn-primary {
   background: white;
   border-color: var(--highlight-colour);
-  border-radius: 20px;
+  border-radius: 50px;
   color: var(--highlight-colour);
+  padding: 15px 20px;
 }
 
 .btn-primary:hover {
@@ -94,10 +99,6 @@ p {
 .hero-button:hover {
   background: var(--highlight-colour);
   color: white;
-}
-
-.hero-surname {
-  color: var(--brand-color);
 }
 
 .hero-title {
@@ -158,6 +159,26 @@ p {
 
 .projects-title {
   font-size: 40px;
+}
+
+.skills {
+  margin: 20px;
+}
+
+.skills h5 {
+  color: white;
+  text-align: center;
+}
+
+.skills-icon {
+  display: block;
+  height: 35px;
+  margin: 0 auto;
+}
+
+.skills-title {
+  color: white;
+  text-align: center;
 }
 
 @media (max-width: 576px) {
