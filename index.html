@@ -24,18 +24,19 @@
     <title>Front-end developer | Louise Gray</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="hero">
         <div class="text_position">
           <h1 class="hero-title">
             Louise <span class="hero-surname">Gray</span>
           </h1>
-          <h2 class="hero-text">Front-end developer, based in Australia</h2>
-          <button class="hero-button">Contact me</button>
+          <h2 class="hero-text">Front-end developer based in Australia</h2>
+          <a href="#" class="btn hero-button">Contact me</a>
         </div>
       </div>
     </div>
-    <div class="container portfolio">
+    <div class="container-fluid my-projects">
+      <h2 class="projects-heading">My Projects</h2>
       <div class="row mb-5">
         <div class="col projects d-none d-md-block">
           <img
@@ -44,24 +45,39 @@
             class="img-fluid"
           />
         </div>
-        <div class="col projects mt-2">
-          <h2>Landing page</h2>
-          <p>
+        <div class="col projects mt-2 d-none d-md-block">
+          <h2 class="projects-title">Landing page</h2>
+          <p class="projects-text">
             This project was created during SheCodes Basics workshop. I learned
             the basics of HTML, CSS, Javascript, and VScode.
           </p>
-          <button>Learn more</button>
+          <a href="#" class="btn btn-primary">Learn more</a>
+        </div>
+      </div>
+      <div class="card d-sm-block d-md-none mx-auto" style="width: 18rem">
+        <img
+          src="media/Landing page crop.jpg"
+          class="card-img-top"
+          alt="Landing-page-crop"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Landing page</h5>
+          <p class="card-text">
+            This project was created during SheCodes Basics workshop. I learned
+            the basics of HTML, CSS, Javascript, and VScode.
+          </p>
+          <a href="#" class="btn btn-card">Learn more</a>
         </div>
       </div>
       <div class="row mb-5">
-        <div class="col projects mt-2">
-          <h2>Weather project</h2>
-          <p>
+        <div class="col projects mt-2 d-none d-md-block">
+          <h2 class="projects-title">Weather project</h2>
+          <p class="projects-text">
             This weather application was created during the SheCodes Plus
             workshop. HTML, CSS, JavaScript, APIs, GitHub, and Boostrap were
             used. It is hosted on Netlify.
           </p>
-          <button>Learn more</button>
+          <a href="#" class="btn btn-primary">Learn more</a>
         </div>
         <div class="col projects d-none d-md-block">
           <img
@@ -69,6 +85,22 @@
             alt="Weather-project"
             class="img-fluid"
           />
+        </div>
+      </div>
+      <div class="card d-sm-block d-md-none mx-auto mt-3" style="width: 18rem">
+        <img
+          src="media/Weather project crop.jpg"
+          class="card-img-top"
+          alt="Weather-project-crop"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Weather project</h5>
+          <p class="card-text">
+            This weather application was created during the SheCodes Plus
+            workshop. HTML, CSS, JavaScript, APIs, GitHub, and Boostrap were
+            used. It is hosted on Netlify.
+          </p>
+          <a href="#" class="btn btn-card">Learn more</a>
         </div>
       </div>
       <div class="row mb-5">
@@ -79,13 +111,28 @@
             class="img-fluid"
           />
         </div>
-        <div class="col projects mt-2">
-          <h2>Upcoming projects</h2>
-          <p>
-            5 upcoming projects. I'm improving in my coding skills and learning
-            new ones, including React! Watch this space.....
+        <div class="col projects mt-2 d-none d-md-block">
+          <h2 class="projects-title">Upcoming projects</h2>
+          <p class="projects-text">
+            5 upcoming projects. I'm improving my coding skills and learning new
+            ones, including React! Watch this space.....
           </p>
-          <button>Learn more</button>
+          <a href="#" class="btn btn-primary">Learn more</a>
+        </div>
+      </div>
+      <div class="card d-sm-block d-md-none mx-auto mt-3" style="width: 18rem">
+        <img
+          src="media/Under construction crop.jpg"
+          class="card-img-top"
+          alt="Coming-soon-crop"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Upcoming projects</h5>
+          <p class="card-text">
+            5 upcoming projects. I'm improving my coding skills and learning new
+            ones, including React! Watch this space.....
+          </p>
+          <a href="#" class="btn btn-card">Learn more</a>
         </div>
       </div>
     </div>

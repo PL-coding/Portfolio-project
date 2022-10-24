@@ -2,15 +2,67 @@
   --heading-font-family: "Nunito", sans-serif;
   --default-font-family: "Montserrat", sans-serif;
   --highlight-colour: rgba(39, 33, 66, 1);
+  --brand-color: #28e2ff;
 }
 
 body {
   background: black;
+  font-family: var(--default-font-family);
+}
+
+h1 {
+  color: white;
+  font-family: var(--heading-font-family);
 }
 
 h2 {
+  color: white;
   font-family: var(--heading-font-family);
-  font-size: 45px;
+}
+
+p {
+  color: white;
+}
+
+.about-section {
+  margin: 35px auto;
+  padding: 160px 20px;
+  width: 85%;
+}
+
+.btn-card {
+  border-color: var(--brand-color);
+  border-radius: 20px;
+  color: var(--brand-color);
+}
+
+.btn-card:hover {
+  background: var(--brand-color);
+  border-color: var(--brand-color);
+  color: black;
+}
+
+.btn-primary {
+  background: white;
+  border-color: var(--highlight-colour);
+  border-radius: 20px;
+  color: var(--highlight-colour);
+}
+
+.btn-primary:hover {
+  background: var(--brand-color);
+  border-color: var(--brand-color);
+  color: black;
+}
+
+.card-text {
+  color: black;
+  font-size: 16px;
+}
+
+.card-title {
+  color: black;
+  font-family: var(--heading-font-family);
 }
 
 .container {
@@ -23,14 +75,29 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
-  width: 100%;
+  width: 90%;
   border: 2px solid #676767;
   margin: 3rem auto;
   text-align: center;
 }
 
+.hero-button {
+  background: #ffffff;
+  border-color: var(--highlight-colour);
+  border-radius: 50px;
+  color: var(--highlight-colour);
+  margin: 42px auto 155px;
+  opacity: 0.8;
+  padding: 18px 30px;
+}
+
+.hero-button:hover {
+  background: var(--highlight-colour);
+  color: white;
+}
+
 .hero-surname {
-  color: #28e2ff;
+  color: var(--brand-color);
 }
 
 .hero-title {
@@ -50,31 +117,24 @@ h2 {
   font-size: 24px;
   letter-spacing: 0.05em;
   margin: 50px 0;
+  padding: 0 10px;
   text-align: center;
 }
 
-.hero-button {
-  background: #ffffff;
-  border-color: var(--highlight-colour);
-  border-radius: 50px;
-  color: var(--highlight-colour);
-  display: flex;
-  font-family: var(--default-font-family);
-  margin: 42px auto 155px;
-  opacity: 0.8;
-  padding: 18px 30px;
-}
-
-.portfolio {
+.my-projects {
   background-color: #202020;
   color: white;
   margin: 0;
   max-width: 100%;
-  padding: 66px 55px;
+  padding: 66px 70px;
   width: 100%;
 }
 
-.portfolio button {
+.projects {
+  padding: 10px 50px;
+}
+
+.projects button {
   background: #ffffff;
   border-color: var(--highlight-colour);
   border-radius: 50px;
@@ -84,16 +144,23 @@ h2 {
   padding: 18px 30px;
 }
 
-.portfolio p {
+.projects-heading {
+  color: var(--brand-color);
+  font-size: 60px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.projects-text {
   font-size: 24px;
   margin-bottom: 30px;
 }
 
-.projects {
-  padding: 10px 50px;
+.projects-title {
+  font-size: 40px;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   button {
     padding: 12px 20px;
   }
@@ -101,7 +168,22 @@ h2 {
   .hero-button {
     margin: 42px auto 60px;
   }
+
   .portfolio {
     padding: 35px 55px;
+  }
+
+  .portfolio-heading {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 11rem !important;
+  }
+
+  .hero-title {
+    font-size: 58px;
   }
 }
