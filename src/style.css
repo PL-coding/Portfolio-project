@@ -25,7 +25,6 @@ p {
 }
 
 .about-section {
-  margin: 35px auto;
   padding: 160px 20px;
   width: 85%;
 }
@@ -162,7 +161,7 @@ p {
 }
 
 .skills {
-  margin: 20px;
+  width: 85%;
 }
 
 .skills h5 {
