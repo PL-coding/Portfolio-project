@@ -3,6 +3,7 @@
   --default-font-family: "Montserrat", sans-serif;
   --highlight-colour: rgba(39, 33, 66, 1);
   --brand-color: #28e2ff;
+  --secondary-color: #ff911c;
 }
 
 body {
@@ -26,8 +27,12 @@ p {
 }
 
 .about-section {
-  padding: 120px 20px;
+  padding: 85px 20px;
   width: 85%;
+}
+
+.active {
+  color: var(--brand-color) !important;
 }
 
 .branding-word {
@@ -51,13 +56,13 @@ p {
   border-color: var(--highlight-colour);
   border-radius: 50px;
   color: var(--highlight-colour);
-  padding: 15px 20px;
+  padding: 8px 12px;
 }
 
 .btn-primary:hover {
-  background: var(--brand-color);
+  background: var(--highlight-colour);
   border-color: var(--brand-color);
-  color: black;
+  color: white;
 }
 
 .card-text {
@@ -66,13 +71,20 @@ p {
 }
 
 .card-title {
-  color: black;
+  color: var(--secondary-color);
   font-family: var(--heading-font-family);
+  font-weight: bold;
 }
 
-.certification a {
-  color: #ff911c;
+.certificates a {
+  color: var(--secondary-color);
   text-decoration: none;
+}
+
+.certification {
+  background-color: #202020;
+  padding: 35px 20px;
+  width: 100%;
 }
 
 .container {
@@ -103,6 +115,7 @@ p {
 
 .hero-button:hover {
   background: var(--highlight-colour);
+  border-color: var(--brand-color);
   color: white;
 }
 
@@ -129,15 +142,25 @@ p {
 
 .my-projects {
   background-color: #202020;
-  color: white;
   margin: 0;
   max-width: 100%;
   padding: 66px 70px;
   width: 100%;
 }
 
+.navbar-brand {
+  color: var(--secondary-color);
+  margin-left: 20px;
+}
+
 .projects {
-  padding: 10px 50px;
+  border: 2px solid #676767;
+  padding: 20px 50px;
+}
+
+.projects h4 {
+  padding: 0 0 12px;
+  text-align: center;
 }
 
 .projects button {
@@ -152,18 +175,8 @@ p {
 
 .projects-heading {
   color: var(--brand-color);
-  font-size: 60px;
   margin-bottom: 48px;
   text-align: center;
-}
-
-.projects-text {
-  font-size: 24px;
-  margin-bottom: 30px;
-}
-
-.projects-title {
-  font-size: 40px;
 }
 
 .skills {
@@ -201,6 +214,10 @@ p {
 
   .portfolio-heading {
     margin-bottom: 0;
+  }
+
+  .projects {
+    text-align: center;
   }
 }
 
