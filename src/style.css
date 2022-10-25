@@ -12,11 +12,14 @@ body {
   font-family: var(--default-font-family);
 }
 
-h1 {
-  color: white;
-  font-family: var(--heading-font-family);
+footer {
+  background: #202020;
+  border-bottom: 3px solid var(--highlight-colour);
+  border-top: 3px solid var(--highlight-colour);
+  padding: 30px;
 }
 
+h1,
 h2 {
   color: white;
   font-family: var(--heading-font-family);
@@ -83,16 +86,31 @@ p {
 
 .certification {
   background-color: #202020;
-  padding: 35px 20px;
+  padding: 35px 25px;
   width: 100%;
 }
 
 .contact {
+  background-color: #676767;
+  border-radius: 50%;
   color: var(--secondary-color);
+  margin: 20px;
+  padding: 10px;
+}
+
+.contact:hover {
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  color: var(--highlight-colour);
+  transition: all 200ms ease-in-out;
 }
 
 .contact-details {
-  margin-top: 40px;
+  margin-top: 70px;
+}
+
+.contact-end {
+  margin-bottom: 120px;
 }
 
 .contact-links {
@@ -156,6 +174,10 @@ p {
   margin: 50px 0;
   padding: 0 10px;
   text-align: center;
+}
+
+.inquiry {
+  padding: 0 30px;
 }
 
 .my-portfolio {
@@ -240,6 +262,10 @@ p {
     margin: 42px auto 60px;
   }
 
+  .my-projects {
+    padding: 40px;
+  }
+
   .portfolio {
     padding: 35px 55px;
   }
@@ -249,16 +275,21 @@ p {
   }
 
   .projects {
+    margin: 0 30px;
     text-align: center;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 395px) {
   .card {
-    width: 11rem !important;
+    width: 15rem !important;
   }
 
   .hero-title {
     font-size: 58px;
+  }
+
+  .projects {
+    padding: 15px 10px;
   }
 }
