@@ -91,12 +91,11 @@ p {
   color: var(--secondary-color);
 }
 
-.contact-details h1,
-h3 {
+.contact-details {
   margin-top: 40px;
 }
 
-.contact-details a {
+.contact-links {
   color: var(--brand-color);
   text-decoration: none;
 }
