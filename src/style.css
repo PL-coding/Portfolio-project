@@ -87,6 +87,20 @@ p {
   width: 100%;
 }
 
+.contact {
+  color: var(--secondary-color);
+}
+
+.contact-details h1,
+h3 {
+  margin-top: 40px;
+}
+
+.contact-details a {
+  color: var(--brand-color);
+  text-decoration: none;
+}
+
 .container {
   width: 90%;
 }
@@ -155,7 +169,14 @@ p {
 
 .projects {
   border: 2px solid #676767;
+  margin: 0 55px;
   padding: 20px 50px;
+}
+
+.projects h3 {
+  color: var(--secondary-color);
+  padding: 0 0 12px;
+  text-align: center;
 }
 
 .projects h4 {
