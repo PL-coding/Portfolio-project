@@ -253,6 +253,12 @@ p {
   margin-bottom: 10px;
 }
 
+@media (max-width: 760px) {
+  .index-projects-small {
+    text-align: center;
+  }
+}
+
 @media (max-width: 576px) {
   button {
     padding: 12px 20px;
